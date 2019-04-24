@@ -8,6 +8,12 @@ After the VM is running we'll capture it's IP address(es) and mail them to the a
 - Ansible
 - GIT
 
+### Variables ###
+Update the following role/defaults vars:
+- from_address
+- to_address
+to meet your requirements.
+
 ### Execute ###
 Pull this repository to your local machine and enter the following command:
 ```sh
