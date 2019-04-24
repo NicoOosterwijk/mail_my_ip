@@ -1,0 +1,7 @@
+---
+- name: Mail me the IP address
+  hosts: centos
+  gather_facts: False
+  roles:
+    - { role: common, tags: 'common' }
+

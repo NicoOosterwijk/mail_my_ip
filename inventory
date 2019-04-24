@@ -1,0 +1,2 @@
+[local]
+centos ansible_host=172.17.177.121

@@ -1,0 +1,6 @@
+---
+from_address: nico.oosterwijk@ziggo.nl
+to_address: noosterwijk@hotmail.com
+packages:
+  required:
+    - net-tools
