@@ -6,6 +6,7 @@ After the VM is running we'll capture it's IP address(es) and mail them to the a
 ### Requirements ###
 - VirtualBox
 - Ansible
+- Vagrant
 - GIT
 
 ### Variables ###
