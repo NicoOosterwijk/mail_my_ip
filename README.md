@@ -12,6 +12,7 @@ After the VM is running we'll capture it's IP address(es) and mail them to the a
 Update the following role/defaults vars:
 - from_address
 - to_address
+
 to meet your requirements.
 
 ### Execute ###
