@@ -13,8 +13,9 @@ Pull this repository to your local machine and enter the following command:
 ```sh
  $ vagrant up
 ```
+- Check your mail!
 
-To remove the VM from you VirtualBox environment, enter the following command:
+To remove the VM from your VirtualBox environment, enter the following command:
 ```sh
   $ vagrant destoy -f
 ```

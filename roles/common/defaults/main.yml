@@ -1,6 +1,6 @@
 ---
-from_address: nico.oosterwijk@ziggo.nl
-to_address: noosterwijk@hotmail.com
+from_address: whoever@host.com
+to_address: to_my_address@mailhost.com
 packages:
   required:
     - net-tools
