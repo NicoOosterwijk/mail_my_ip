@@ -1,6 +1,5 @@
 ---
 # tasks file for common
-
 - name: PRE CHECK - Are all mandatory variables set? If OK, this step will be skipped.
   fail:
     msg: "Variable {{ item }} is not defined or empty. Please fix and try again."
@@ -11,14 +10,12 @@
     - "{{ from_address }}"
     - "{{  packages.required }}"
   tags: check
-
 - name: Installing required packages
   become: yes
   yum:
     name: "{{ packages.required }}"
     state: present
   tags: packages
-
 - name: Copy mail templates
   template:
     src: mail.txt.j2
@@ -26,7 +23,6 @@
     mode: 0644
     owner: vagrant
     group: vagrant
-
 - name: Copy mail script
   copy:
     src: mailIP.sh
@@ -34,12 +30,10 @@
     mode: 0755
     owner: vagrant
     group: vagrant
-
 - name: Set timezone to Europe/Amsterdam
   become: yes
   timezone:
     name: Europe/Amsterdam
-
 - name: Mail the IP address
   shell: "/home/vagrant/mailIP.sh"
 
